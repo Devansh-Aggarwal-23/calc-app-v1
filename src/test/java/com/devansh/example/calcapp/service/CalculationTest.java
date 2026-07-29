@@ -39,6 +39,12 @@ public class CalculationTest {
         Assertions.assertEquals(36,calc.mul(9,4));
     }
 
+    @Test
+    public void testDiv() {
+        Assertions.assertNotNull(calc, "service object is null");
+        Assertions.assertEquals(5,calc.div(20,4));
+    }
+
     @AfterEach
     public void tearDown() {
         logger.info("tearDown:- initialized and service instantiated");
