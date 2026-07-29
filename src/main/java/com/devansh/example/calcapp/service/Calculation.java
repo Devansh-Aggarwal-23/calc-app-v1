@@ -22,6 +22,11 @@ public class Calculation {
         return a * b;
     }
 
+    public double power(double a, double b) {
+        logger.debug("Powing {} and {}", a, b);
+        return Math.pow(a, b);
+    }
+
     public double div(double a, double b) {
         logger.debug("Dividing {} and {}", a, b);
         return a / b;
